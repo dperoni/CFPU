@@ -4,8 +4,11 @@ import os
 import numpy
 import math
 
-m2s_path = "/home/dperoni/CFPU/multi2sim-4.2/bin/m2s"
-output_directory = "/home/dperoni/CFPU/data"
+CFPU_dir = "/home/dperoni/CFPU/"
+m2s_path = CFPU_dir + "multi2sim-4.2/bin/m2s"
+output_directory = CFPU_dir + "data"
+rodinia_dir = CFPU_dir + "rodinia_3.1"
+amd_sdk_dir = CFPU_dir + "m2s-bench-amdapp-2.5-si"
 
 max_error = [0,  0.015625, 0.03125, 0.0625, 0.125, 0.25, 1]
 
@@ -14,31 +17,23 @@ image_benchmarks = ["airplanes", "brontosaurus", "cougar_face", "elephant"]
 #image_benchmarks = ["elephant"]
 #Lists of tests: Test name, test path, type, check script, kernel_name, commands
 tests = [
-#["SobelFilter", "/home/dperoni/CFPU/m2s-bench-amdapp-2.5-si/SobelFilter", "image", "", "SobelFilter_Kernels.bin", ""],
-#["Roberts", "/home/dperoni/CFPU/m2s-bench-amdapp-2.5-si/Roberts", "image", "", "Roberts_Kernel.bin", ""],
-#["Blur", "/home/dperoni/CFPU/m2s-bench-amdapp-2.5-si/Blur", "image", "", "Blur_Kernel.bin"], "",
-#["Sharpen", "/home/dperoni/CFPU/m2s-bench-amdapp-2.5-si/Sharpen", "image", "", "Sharpen_Kernel.bin", ""],
-#["kmeans", "/home/dperoni/rodinia_3.1/opencl/kmeans", "rodinia", "kmeans_check.py", "kmeans.bin", "-i ../../data/kmeans/exp.txt -r -l 1 -m 4 -n 4"],
-#["nn", "/home/dperoni/rodinia_3.1/opencl/nn", "rodinia", "nn_check.py", "nearestNeighbor_kernel.bin", "./inputs -p 0 -d 1"],
-#["backprop", "/home/dperoni/rodinia_3.1/opencl/backprop", "rodinia", "back_check.py", "backprop_kernel.bin", "512"],
-#["lud", "/home/dperoni/rodinia_3.1/opencl/lud/ocl", "rodinia", "lud_check.py", "lud_kernel.bin", "-v -i ../../../data/lud/64.dat"],
-#["FFT", "/home/dperoni/CFPU/m2s-bench-amdapp-2.5-si/FFT", "rodinia",  "fft_check.py", "FFT_Kernels.bin", "-i 5 -e --load FFT_Kernels.bin"],
-#["MersenneTwister", "/home/dperoni/CFPU/m2s-bench-amdapp-2.5-si/MersenneTwister", "rodinia", "twister_check.py", "MersenneTwister_Kernels.bin", "-e --load MersenneTwister_Kernels.bin"],
-#["DwtHaar1D", "/home/dperoni/CFPU/m2s-bench-amdapp-2.5-si/DwtHaar1D", "rodinia", "dwt_check.py", "DwtHaar1D_Kernels.bin", "--load DwtHaar1D_Kernels.bin -x 20000 -e"],
-#["BinomialOption", "/home/dperoni/CFPU/m2s-bench-amdapp-2.5-si/BinomialOption", "rodinia", "binom_check.py", "BiomialOption_Kernels.bin", "--load BinomialOption_Kernels.bin -x 20 -e"],
-#["EigenValue", "/home/dperoni/CFPU/m2s-bench-amdapp-2.5-si/EigenValue", "rodinia", "eigen_check.py", "EigenValue_Kernels.bin", "--load EigenValue_Kernels.bin -x 2 -e"],
-#["QuasiRandomSequence", "/home/dperoni/CFPU/m2s-bench-amdapp-2.5-si/QuasiRandomSequence", "rodinia", "quasi_check.py", "QuasiRandomSequence_Kernels.bin", "--load QuasiRandomSequence_Kernels.bin -e"],
-#["SimpleConvolution", "/home/dperoni/CFPU/m2s-bench-amdapp-2.5-si/SimpleConvolution", "rodinia", "conv_test.py", "SimpleConvolution_Kernels.bin", "--load SimpleConvolution_Kernels.bin -e"],
-#["RecursiveGaussian", "/home/dperoni/CFPU/m2s-bench-amdapp-2.5-si/RecursiveGaussian", "image", "", "RecursiveGaussian_Kernels.bin"],
-["BlackScholes", "/home/dperoni/CFPU/m2s-bench-amdapp-2.5-si/BlackScholes", "rodinia", "scholes_check.py", "BlackScholes_Kernels.bin", "--load BlackScholes_Kernels.bin -e"],
-
-
-
-
-
-
-
-#["Rodinia-NN", "/home/rodinia_3.1/opencl/kmeans", "rodinia", "kmeans_check.py"]
+["SobelFilter", amd_sdk_dir+"/SobelFilter", "image", "", "SobelFilter_Kernels.bin", ""],
+#["Roberts", amd_sdk_dir + "/Roberts", "image", "", "Roberts_Kernel.bin", ""],
+#["Blur", amd_sdk_dir + "/Blur", "image", "", "Blur_Kernel.bin"], "",
+#["Sharpen", amd_sdk_dir + "/Sharpen", "image", "", "Sharpen_Kernel.bin", ""],
+#["kmeans", rodinia_dir + "/opencl/kmeans", "rodinia", "kmeans_check.py", "kmeans.bin", "-i ../../data/kmeans/exp.txt -r -l 1 -m 4 -n 4"],
+#["nn", rodinia_dir + "/opencl/nn", "rodinia", "nn_check.py", "nearestNeighbor_kernel.bin", "./inputs -p 0 -d 1"],
+#["backprop", rodinia_dir + "/opencl/backprop", "rodinia", "back_check.py", "backprop_kernel.bin", "512"],
+#["lud", rodinia_dir + "/opencl/lud/ocl", "rodinia", "lud_check.py", "lud_kernel.bin", "-v -i ../../../data/lud/64.dat"],
+#["FFT", amd_sdk_dir + "/FFT", "rodinia",  "fft_check.py", "FFT_Kernels.bin", "-i 5 -e --load FFT_Kernels.bin"],
+#["MersenneTwister", amd_sdk_dir + "/MersenneTwister", "rodinia", "twister_check.py", "MersenneTwister_Kernels.bin", "-e --load MersenneTwister_Kernels.bin"],
+#["DwtHaar1D", amd_sdk_dir + "/DwtHaar1D", "rodinia", "dwt_check.py", "DwtHaar1D_Kernels.bin", "--load DwtHaar1D_Kernels.bin -x 20000 -e"],
+#["BinomialOption", amd_sdk_dir + "/BinomialOption", "rodinia", "binom_check.py", "BiomialOption_Kernels.bin", "--load BinomialOption_Kernels.bin -x 20 -e"],
+#["EigenValue", amd_sdk_dir + "/EigenValue", "rodinia", "eigen_check.py", "EigenValue_Kernels.bin", "--load EigenValue_Kernels.bin -x 2 -e"],
+#["QuasiRandomSequence", amd_sdk_dir + "/QuasiRandomSequence", "rodinia", "quasi_check.py", "QuasiRandomSequence_Kernels.bin", "--load QuasiRandomSequence_Kernels.bin -e"],
+#["SimpleConvolution", amd_sdk_dir + "/SimpleConvolution", "rodinia", "conv_test.py", "SimpleConvolution_Kernels.bin", "--load SimpleConvolution_Kernels.bin -e"],
+#["RecursiveGaussian", amd_sdk_dir+ "/RecursiveGaussian", "image", "", "RecursiveGaussian_Kernels.bin"],
+["BlackScholes", amd_sdk_dir + "/BlackScholes", "rodinia", "scholes_check.py", "BlackScholes_Kernels.bin", "--load BlackScholes_Kernels.bin -e"],
 
 
 ]
