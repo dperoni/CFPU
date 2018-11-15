@@ -1,0 +1,64 @@
+Platform 0 : Multi2Sim
+
+Original Input Real
+95.9866 74.9045 83.2988 153.073 253.602 189.482 16.7663 3.03332 177.873 212.473 
+
+
+Original Input Img
+0.374948 0.292596 0.325386 0.59794 0.990634 0.740164 0.0654935 0.0118489 0.694815 0.829972 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 5 iterations
+-------------------------------------------
+
+Output real
+131035 -2529.41 2173.8 26.5181 96.2128 -614.473 2649.63 -1581.21 1662.14 1631.51 
+
+
+Output img
+511.856 1656.64 1121.26 -3113.56 -319.578 -1661.91 -1638.46 1201.27 -2234.88 -1956.43 
+
+
+verification Output img
+511.856 1104.51 1413.18 -1856.45 357.285 -2548.74 -1410.55 -730.196 -2001.83 -2056.3 
+
+Failed
+
+profiling 0
+------- start loading tcam ------ 
+Opening /home/dperoni/CFPU/m2s-bench-amdapp-2.5-si/FFT/FFT_Kernels.bin
+Binary 0x0
+arg ./FFT
+386
+test
+./FFT
+here
+here2
+llll
+here3
+here4
+Dumpng data
+
+-------- FIRST STAGE CFPU HIT STATISTICS ----------
+	Hits_S1 	Hit_S2 	Total 	Hit rate 	Stage 2 Hit rate 	Overall Hit rate
+test 1
+FPU_ID_0: 0	 0	 0	 -nan	 -nan	 -nan
+FPU_ID_MUL: 52416	 0	 52416	 100.0000	 0.0000	 100.0000
+FPU_ID_2: 0	 0	 0	 -nan	 -nan	 -nan
+FPU_ID_3: 0	 0	 0	 -nan	 -nan	 -nan
+FPU_ID_4: 0	 0	 0	 -nan	 -nan	 -nan
+FPU_ID_5: 0	 0	 0	 -nan	 -nan	 -nan
+FPU_ID_6: 0	 0	 0	 -nan	 -nan	 -nan
+FPU_ID_7: 0	 0	 0	 -nan	 -nan	 -nan
+FPU_ID_8: 0	 0	 0	 -nan	 -nan	 -nan
+FPU_ID_9: 0	 0	 0	 -nan	 -nan	 -nan
+FPU_ID_10: 0	 0	 0	 -nan	 -nan	 -nan
+FPU_ID_11: 0	 0	 0	 -nan	 -nan	 -nan
+FPU_ID_12: 0	 0	 0	 -nan	 -nan	 -nan
+FPU_ID_13: 0	 0	 0	 -nan	 -nan	 -nan
+FPU_ID_14: 0	 0	 0	 -nan	 -nan	 -nan
+FPU_ID_15: 0	 0	 0	 -nan	 -nan	 -nan
+
+test3

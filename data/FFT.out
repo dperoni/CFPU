@@ -1,0 +1,39 @@
+Exact Results
+Average Hitrate, 0.0
+
+Mantissa Drop Results
+Average Error, 67.6383791455
+Average hitrate, 100.0
+
+Adaptive Selection Results
+Average Error, 81.5026988495
+Average hitrate, 100.0
+
+Adaptive Simple Selection Results
+Average Simple  Error, 49.5079392988
+Average Simple hitrate, 100.0
+
+Tuning Results
+Max Error, 	0,	0.015625,	0.03125,	0.0625,	0.125,	0.25,	1,	
+Average Error, 	0.0,	12.971,	42.686,	29.939,	49.88,	119.273,	151.863,	
+Average hitrate, 	9.348,	10.63,	12.794,	17.628,	31.864,	98.184,	100.0,	
+
+TuningAdaptiveSimple Results
+Max Error, 	0,	0.015625,	0.03125,	0.0625,	0.125,	0.25,	1,	
+Average Error, 	0.0,	45.479,	69.985,	99.549,	99.549,	63.926,	63.926,	
+Average hitrate, 	9.348,	100.0,	100.0,	100.0,	100.0,	100.0,	100.0,	
+
+Shift and Add Results
+Max Error, 	0,	0.015625,	0.03125,	0.0625,	0.125,	0.25,	1,	
+Average Error, 	36.286,	31.917,	202.1,	185.503,	14.065,	44.842,	122.614,	
+Average first stage hitrate, 	9.348,	11.191,	13.889,	21.247,	38.141,	100.0,	100.0,	
+Average second stage hitrate, 	90.652,	88.809,	86.111,	78.753,	61.859,	0.0,	0.0,	
+Average total hitrate, 	100.0,	100.0,	100.0,	100.0,	100.0,	100.0,	100.0,	
+
+Shift and Add w/ 2nd stage Tuning Results
+Max Error, 	0,	0.015625,	0.03125,	0.0625,	0.125,	0.25,	1,	
+Average Error, 	0.001,	19.379,	7.489,	9.916,	30.35,	86.856,	65.977,	
+Average first stage hitrate, 	9.348,	11.178,	13.074,	21.234,	37.994,	100.0,	100.0,	
+Average second stage hitrate, 	3.392,	46.635,	68.256,	76.456,	62.006,	0.0,	0.0,	
+Average total hitrate, 	12.74,	57.813,	81.33,	97.69,	100.0,	100.0,	100.0,	
+

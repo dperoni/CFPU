@@ -1,0 +1,39 @@
+Exact Results
+Average Hitrate, 0.0
+
+Mantissa Drop Results
+Average PSNR, 33.38209154
+Average hitrate, 100.0
+
+Adaptive Selection Results
+Average PSNR, 50.4162126451
+Average hitrate, 100.0
+
+Adaptive Simple Selection Results
+Average Simple  PSNR, 50.4162126451
+Average Simple hitrate, 100.0
+
+Tuning Results
+Max Error, 	0,	0.015625,	0.03125,	0.0625,	0.125,	0.25,	1,	
+Average PSNR, 	100.0,	83.398,	74.34,	66.209,	58.659,	50.954,	50.416,	
+Average hitrate, 	91.127,	91.155,	91.291,	91.831,	93.5,	97.878,	100.0,	
+
+TuningAdaptiveSimple Results
+Max Error, 	0,	0.015625,	0.03125,	0.0625,	0.125,	0.25,	1,	
+Average PSNR, 	100.0,	46.813,	46.813,	46.813,	46.813,	46.813,	46.813,	
+Average hitrate, 	91.127,	100.0,	100.0,	100.0,	100.0,	100.0,	100.0,	
+
+Shift and Add Results
+Max Error, 	0,	0.015625,	0.03125,	0.0625,	0.125,	0.25,	1,	
+Average PSNR, 	55.211,	55.632,	55.976,	56.219,	55.183,	50.416,	50.416,	
+Average first stage hitrate, 	91.127,	91.266,	91.678,	92.878,	95.787,	100.0,	100.0,	
+Average second stage hitrate, 	8.873,	8.734,	8.322,	7.122,	4.213,	0.0,	0.0,	
+Average total hitrate, 	100.0,	100.0,	100.0,	100.0,	100.0,	100.0,	100.0,	
+
+Shift and Add w/ 2nd stage Tuning Results
+Max Error, 	0,	0.015625,	0.03125,	0.0625,	0.125,	0.25,	1,	
+Average PSNR, 	100.0,	69.667,	63.282,	57.853,	55.183,	50.416,	50.416,	
+Average first stage hitrate, 	91.127,	91.266,	91.678,	92.878,	95.787,	100.0,	100.0,	
+Average second stage hitrate, 	4.554,	4.828,	5.333,	5.991,	4.213,	0.0,	0.0,	
+Average total hitrate, 	95.681,	96.094,	97.012,	98.869,	100.0,	100.0,	100.0,	
+
