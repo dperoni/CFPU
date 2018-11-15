@@ -1,0 +1,72 @@
+#!/usr/bin/python
+import re
+import glob, os
+
+base_path = "/home/dperoni/rodinia_3.1/opencl/kmeans/tested-data/0.125/" 
+ref_path = "/home/dperoni/rodinia_3.1/opencl/kmeans/tested-data/0/0-0/_10000.rep"
+
+
+reference_file = open(ref_path, 'r'); 
+
+i = 0;
+ref_values = []
+
+for line in reference_file:
+	#print line    
+	if "Output" in line:
+		#print "here\n"
+	
+        	ref_values.append(re.findall(r"[-+]?\d*\.\d+|\d+", line)[0])
+		i += 1
+
+#print data
+
+reference_file.close()
+
+#print ref_values
+
+
+for file in os.listdir(base_path):
+    print base_path + file
+    temp_path = base_path+file
+    check_vals = []
+    for data_file in os.listdir(temp_path):
+        print data_file
+        read_file = open(temp_path+"/"+data_file)
+        for line in read_file:
+            if "Output" in line:
+                data = line
+                check_vals.append(re.findall(r"[-+]?\d*\.\d+|\d+", data)[0])
+       
+
+            if "FPU_ID_1:" in line:
+                hit_rate = line
+
+        hit_vals =  re.findall(r"[-+]?\d*\.\d+|\d+", hit_rate)
+        print "Hit percentage: " +hit_vals[3]
+
+       
+    size = len(check_vals)
+    #print check_vals
+    if(size > 0):
+        error = 0;
+        #print ref_values
+        for i in range (0, 1024):#min(size, len(ref_values))): 
+            if(float(ref_values[i]) != float(check_vals[i])):
+                error += 1
+            #if(float(ref_values[i]) == 0 and float(check_vals[i]) == 0):
+             #   error += 0
+            #elif(float(ref_values[i]) == 0):
+             #   error += 100
+            #else:
+             #   error += abs((float(ref_values[i]) - float(check_vals[i]))/float(ref_values[i]))*100
+
+        print error
+        print float(size)
+        error = error/float(size)*100
+        print error
+    else:
+        print "100"
+        print "\n"
+        print "\n"        
+

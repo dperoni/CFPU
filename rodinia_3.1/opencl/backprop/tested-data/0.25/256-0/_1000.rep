@@ -1,0 +1,583 @@
+Random number generator seed: 7
+Input layer size : 512
+Starting training kernel
+num_devices = 1
+whoop
+Performing GPU computation
+Output 2615494
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 2980169
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 2852447
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 2473790
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 1798381
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 2067704
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 3154450
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 2375034
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 2297804
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 3225449
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 2109302
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 2179049
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 2565667
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 1975924
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 2970705
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 3072236
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output 0
+Output error 0, Hidden error 0
+
+Finish the training for one iteration
+profiling 0
+------- start loading tcam ------ 
+Loaded 0 values for adder 
+Loaded 256 values for multiplier 
+Loaded 49 values for muladdtiplier 
+Loaded 1 values for mad 
+Loaded 1 values for sqrt 
+hello
+Binary 0x0
+arg backprop
+386
+test
+backprop
+here
+here2
+llll
+here3
+here4
+hello
+test4
+Dumpng data
+
+-------- TCAM HIT STATISTICS ----------
+	TCAM Hit rate 	TCAM rewrite rate
+FPU_ID_0: 0.0000	 100.0000
+FPU_ID_1: 84.9809	 15.0191
+FPU_ID_2: -nan	 -nan
+FPU_ID_3: 0.0000	 0.0000
+FPU_ID_4: -nan	 -nan
+FPU_ID_5: -nan	 -nan
+FPU_ID_6: -nan	 -nan
+FPU_ID_7: -nan	 -nan
+FPU_ID_8: -nan	 -nan
+FPU_ID_9: -nan	 -nan
+FPU_ID_10: -nan	 -nan
+FPU_ID_11: -nan	 -nan
+FPU_ID_12: -nan	 -nan
+FPU_ID_13: -nan	 -nan
+FPU_ID_14: -nan	 -nan
+FPU_ID_15: -nan	 -nan
+
+
+-------- HIT STATISTICS ----------
+	FPU_hit_cnt	 FPU_cnt	 hit rate
+FPU_ID_0: 0	 24576	 0.000000
+FPU_ID_1: 21320	 25088	 84.980865
+FPU_ID_2: 0	 0	 -nan
+FPU_ID_3: 0	 8192	 0.000000
+FPU_ID_4: 0	 0	 -nan
+FPU_ID_5: 0	 0	 -nan
+FPU_ID_6: 0	 0	 -nan
+FPU_ID_7: 0	 0	 -nan
+FPU_ID_8: 0	 0	 -nan
+FPU_ID_9: 0	 0	 -nan
+FPU_ID_10: 0	 0	 -nan
+FPU_ID_11: 0	 0	 -nan
+FPU_ID_12: 0	 0	 -nan
+FPU_ID_13: 0	 0	 -nan
+FPU_ID_14: 0	 0	 -nan
+FPU_ID_15: 0	 0	 -nan
+
+test3

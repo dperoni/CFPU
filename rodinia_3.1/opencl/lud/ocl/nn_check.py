@@ -1,0 +1,64 @@
+#!/usr/bin/python
+import re
+import glob, os
+
+base_path = "/home/dperoni/approximate_associative_mem/m2s-bench-amdapp-2.5-si/BinomialOption/tested-data/" 
+base_path = "/home/dperoni/rodinia_3.1/opencl/lud/ocl/tested-data/0.25/" 
+ref_path = "/home/dperoni/rodinia_3.1/opencl/lud/ocl/tested-data/0/8-0/_1000.rep"
+
+
+reference_file = open(ref_path, 'r'); 
+
+i = 0;
+ref_values = []
+
+for line in reference_file:
+	#print line    
+	if "Output" in line:
+		#print "here\n"
+	
+        	ref_values.append(re.findall(r"[-+]?\d*\.\d+|\d+", line)[0])
+		i += 1
+
+#print data
+
+reference_file.close()
+
+#print ref_values
+
+
+for file in os.listdir(base_path):
+    print base_path + file
+    temp_path = base_path+file
+    check_vals = []
+    for data_file in os.listdir(temp_path):
+        print data_file
+        read_file = open(temp_path+"/"+data_file)
+        for line in read_file:
+            if "Output" in line:
+                data = line
+                check_vals.append(re.findall(r"[-+]?\d*\.\d+|\d+", data)[0])
+       
+
+            if "FPU_ID_1:" in line:
+                hit_rate = line
+
+        hit_vals =  re.findall(r"[-+]?\d*\.\d+|\d+", hit_rate)
+        print "Hit percentage: " +hit_vals[3]
+
+       
+    size = len(check_vals)
+    #print check_vals
+    if(size > 0):
+        error = 0;
+        #print ref_values
+        for i in range (0, size):
+            error += abs((float(ref_values[i]) - float(check_vals[i]))/float(ref_values[i]))*100
+
+        error = error/float(size)
+        print error
+    else:
+        print "100"
+        print "\n"
+        print "\n"        
+
